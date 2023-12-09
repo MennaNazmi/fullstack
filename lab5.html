@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+<body>
+    <h1> <strong> Register</strong> </h1>
+    
+    <form action="https://developer.mozilla.org" method="GET">
+        <div>
+         <label> First Name: <input type="text" placeholder="John" required> </label>
+         <label> Last Name: <input type="text" placeholder="Smith" required> </label>
+        </div>
+        <div> 
+            <label > Male <input type="radio" name="gender"> </label>
+            <label > Female <input type="radio" name="gender"> </label>
+            <label > Other <input type="radio" name="gender"> </label>
+        
+        </div>
+        <div>
+            <label> Email: <input type="email" placeholder="ur email" required> </label>
+            <label> Password: <input type="password" placeholder="ur password" required minlength="5" maxlength="10"> </label>
+           </div>
+        <div> <label>Birthday: 
+              <select name="Month"> <option>Month</option>     </select>
+              <select name="Day" > <option>Day</option>     </select>
+              <select name="Year"> <option>Year</option>     </select>
+
+              </label>
+    </div>
+        <div> <label>I agree to the rerms and conditions </label> <input type="checkbox"></div>
+        <div>
+            <button>Submit</button>
+        </div>
+         
+    </form>
+    
+
+</body>
+</html>
