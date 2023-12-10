@@ -1,0 +1,14 @@
+img {
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+h2{
+    font:"Rethink Sans";
+    margin-left : 1.66%;
+    border-bottom: 3px solid red;
+    width:30%;
+    padding-bottom: 20px;
+
+}
