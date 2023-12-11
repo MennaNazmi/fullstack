@@ -14,7 +14,9 @@ body {
 h2 {
     color: pink;
 }
-
+h4{
+    letter-spacing: 0.2rem;
+}
 .f1 {
     border-left: 5px solid gray;
    
