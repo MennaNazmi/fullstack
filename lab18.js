@@ -16,7 +16,7 @@ var pickedcolor= pickColor() //colors[3];
 var pickedcolordisplay=document.querySelector("#pickedcolor");
 var messageDisplay=document.querySelector("#message")
 var h1display=document.querySelector("h1")
-
+var resetbtn=document.querySelector("#reset")
 
 for(var i=0;i<squares.length;i++)
 {
@@ -28,8 +28,6 @@ for(var i=0;i<squares.length;i++)
          //we clicked on this
          var clickedColor =this.style.background
        
-         console.log(clickedColor)
-         console.log(pickedcolor)
          if(clickedColor===pickedcolor)
          {
            
@@ -40,11 +38,23 @@ for(var i=0;i<squares.length;i++)
          else {
             //alert("wrong")
             this.style.background="rgb(128, 128, 128)"
-            messageDisplay.textContent="Wrong"
+            messageDisplay.textContent="Try Again"
          }
     })
 }
 pickedcolordisplay.textContent=pickedcolor;
+
+
+resetbtn.addEventListener('click', function(){
+    colors = generateRandomColors(6);
+    for(var i=0;i<squares.length;i++){
+        squares[i].style.background = colors[i]//change squares color
+        pickedcolor= pickColor()
+        pickedcolordisplay.textContent=pickedcolor;
+        h1display.style.backgroundColor="rgb(128, 128, 128)"
+    }
+})
+
 
 
 function changeColor(color)
